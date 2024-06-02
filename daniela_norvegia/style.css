@@ -1,0 +1,190 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root{
+    --green:#a1b082;
+    --black :#1c1c1c;
+    --white:#fff;
+    --nor_blue:#052b7e;
+    --nor_red:	#ce1125;
+}
+
+.container{
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.logo_text{
+    color: var(--nor_blue);
+    font-size: 60px;
+    font-family: "Dancing Script", cursive;
+}
+
+.logo_text span{
+    color: var(--nor_red);
+}
+.logo_text_2{
+    margin-top: -30px;
+    font-size: 30px;
+}
+
+#menu_icon{
+    color: var(--nor_blue);
+    font-size: 30px;
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+/* responsive nav menu */
+.responsive_a_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 80vw;
+    max-width: 100vw;
+    height: 100%;
+    display: none;
+}
+
+.responsive_a_container a{
+    margin:10px;
+}
+
+.responsive_a_container a{
+    width: 60%;
+}
+
+
+
+/* upper section */
+
+.header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+#logo_all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+
+/* btn */
+.btn{
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--nor_blue);
+    cursor: pointer;
+    margin:30px;
+    transition: all 0.3s ease-in-out;
+    color: var(--nor_blue);
+}
+
+
+.btn:hover{
+    background-color: var(--nor_red);
+    color: var(--white);
+    border: 2px solid var(--nor_red);
+;
+}
+
+.active{
+    background-color: var(--nor_red);
+    color: var(--white);
+    border:2px solid var(--nor_red);
+
+}
+
+
+.first_section{
+    overflow: hidden;
+    margin-top: 80px;
+    width: 100vw;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.norway_image_div{
+    width: 100%;
+    height: 100%;
+
+}
+
+.about_norway_div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.norway_image_div, .about_norway_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:0 0 1;
+}
+
+.about_norway_div{
+    padding: 20px;
+}
+
+
+
+.first_section img{
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+/* responsive */
+
+
+@media screen and (max-width: 1000px){
+    #menu_icon{
+        display: block;
+    }
+
+    .a_container{
+        display: none !important;
+        background-color: red;
+    }
+
+    .first_section{
+        padding: 60px;
+        flex-direction: column;
+    }
+
+}
